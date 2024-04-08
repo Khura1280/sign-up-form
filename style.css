@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #000;
+}
+.sign-up{
+    width: 20%;
+    background-color: red;
+    color: #fff;
+    padding: 10px 15px ;
+    font-size: 15px;
+    margin: 20px auto;
+}
+.fa-times{
+    color: red;
+    font-size: 30px;
+    text-align: right;
+    width: 100%;
+}
+.main-container{
+    width: 40%;
+    height: auto;
+    color: #fff;
+    background-color: #000;
+    margin: 60px auto;
+    border-radius: 5px;
+    border: 1px solid #f1f1f1;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 5px;
+}
+.input-field{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.first-name,.last-name{
+    width: 48%;
+    background-color: #000;
+    border: 1px solid #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.first-name input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #ccc;
+
+}
+.first-name input:focus,.last-name input{
+    background-color:transparent;
+    border: 0px solid;
+    outline: none;
+}
+.last-name input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #ccc;
+
+}
+/*.last-name i,.first-name i{
+    font-size: 20px;
+}*/
+.email-div{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    border: 1px solid #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+}
+.email-div input{
+    background-color: transparent;
+    border: none;
+    width: 70%;
+    outline: none;
+    color: #ccc;
+    margin-left: 10px;
+}
+/*.email-div input:focus{
+    border: none;
+
+}*/
+
+.contact-div{
+    display: flex;
+    align-items: center;
+    width: 100%;
+     margin-bottom: 10px;
+    justify-content: space-between;
+}
+select{
+    width: 20%;
+    border-radius: 5px;
+    color: #ccc;
+     padding: 10px;
+    border: 1px solid #f1f1f1;
+    background-color: #000;
+}
+select option{
+    color: #f1f1f1;
+}
+.phone-number{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 76%;
+    border: 1px solid #f2f2f2;
+    border-radius: 5px;
+}
+.phone-number input{
+    width: 90%;
+    background-color: #000;
+    border: none;
+    outline: none;
+    color: #ccc;
+
+}
+.phone-number input:focus{
+    border: 0px solid ;
+    background-color:transparent;
+}
+/*.phone-number i{
+    font-size: 20px;
+}*/
+input:focus{
+    border: 0px solid;
+    background-color: transparent;
+}
+.password-div{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.password,.confirm-password{
+    width: 48%;
+    border-radius: 5px;
+    background-color: #000;
+    border: 1px solid #f2f2f2;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.password input,.confirm-password input{
+    background-color: #000;
+    outline: none;
+    border: none;
+    color: #ccc;
+}
+.promocode{
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.promocode input{
+    color: #ccc;
+    background-color:transparent;
+    outline: none;
+    border: none;
+
+}
+.terms-condition-div,.accept-div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    
+}
+p span{
+    color: yellow;
+}
+h1{
+    font-weight: 400;
+}
+.accept-div{
+    margin-top: 20px;
+}
+.terms-condition-div p,.accept-div p{
+    font-size: 10px;
+    margin-left: 10px;
+    color: #626262;
+}
+input[type="checkbox"],.checker{
+    background-color:transparent;
+    color: #000;
+    padding: 10px;
+}
+button{
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #1fc2d4;
+    color: #f2f2f2;
+}
+
+
+@media screen and (max-width:992px) {
+    .main-container{
+        padding:4px 30px;
+        border: none;
+    }
+    h1{
+        font-size: 20px;
+    }
+    p{
+        font-size: 10px;
+    }
+}
+  
+  /* On screens that are 600px or less, set the background color to olive */
+  @media screen and (max-width: 600px) {
+    .main-container{
+        width: 100%;
+    }
+  }
+
+
+
